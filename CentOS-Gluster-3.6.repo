@@ -13,7 +13,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
 [centos-gluster36-test]
 name=CentOS-$releasever - Gluster 3.6 Testing
 baseurl=http://buildlogs.centos.org/centos/$releasever/storage/$basearch/gluster-3.6/
-gpgcheck=1
+gpgcheck=0
 enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
 
