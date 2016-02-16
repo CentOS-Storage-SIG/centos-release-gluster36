@@ -1,7 +1,7 @@
 Summary: GlusterFS 3.6 packages from the CentOS Storage SIG repository
 Name: centos-release-gluster36
 Version: 1.0
-Release: 3%{?dist}
+Release: 4%{?dist}
 License: GPLv2
 URL: http://wiki.centos.org/SpecialInterestGroup/Storage
 Source0: CentOS-Gluster-3.6.repo
@@ -23,6 +23,9 @@ install -D -m 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/CentOS-Glust
 %config(noreplace) %{_sysconfdir}/yum.repos.d/CentOS-Gluster-3.6.repo
 
 %changelog
+* Tue Feb 16 2016 Kaleb S. KEITHLEY <kkeithle at redhat.com> - 1.0-4
+- Add -debuginfo and -source repos
+
 * Fri Nov 13 2015 Niels de Vos <ndevos@redhat.com> - 1.0-3
 - Disable "gpgcheck" for testing repo, packages are not signed
 
